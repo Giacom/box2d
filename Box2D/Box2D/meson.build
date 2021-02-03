@@ -1,4 +1,4 @@
-sources = [
+sources = files([
   'Collision/b2BroadPhase.cpp',
   'Collision/b2CollideCircle.cpp',
   'Collision/b2CollideEdge.cpp',
@@ -45,7 +45,7 @@ sources = [
   'Dynamics/Joints/b2WeldJoint.cpp',
   'Dynamics/Joints/b2WheelJoint.cpp',
   'Rope/b2Rope.cpp',
-]
+])
 
 box2dlib = library('box2d', sources,
  include_directories : incdir)
